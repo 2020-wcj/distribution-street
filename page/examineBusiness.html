@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>审核商家</title>
+    <link rel="stylesheet" href="../css/examineBusiness.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            <div>
+                <span>摊位号：</span>
+                <input class="complaNum" type="text">
+            </div>
+            <div class="search">
+                <button class="btnSearch">查询</button>
+                <button class="show">显示已审核</button>
+                <button class="hidden">显示未审核</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-nav">
+                <ul class="menu">
+                    <li class="sid">摊位号</li>
+                    <li class="sname">摊位名</li>
+                    <li class="stype">摊位类型</li>
+                    <li class="sowner">姓名</li>
+                    <li class="porn">是否通过审核</li>
+                </ul>
+            </div>
+            <div class="container-content">
+                <ul class="list">
+                    <!-- <li class="list-mes">
+                        <a href="">
+                            <span>摊位号</span>
+                            <span>摊位名</span>
+                            <span>摊位类型</span>
+                            <span>姓名</span>
+                            <span>是否通过审核</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="showIndex">
+                    <span>当前页面显示：</span>
+                    <select name="" id="page">
+                        <!-- <option class="option" value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option> -->
+                    </select>
+                    <span>条</span>
+                </div>
+                <div class="selectIndex">
+                    <div class="left">left</div>
+                    <div class="right">right</div>
+                </div>
+                <div class="changeIndex">
+                    <div>跳转到：</div>
+                    <input type="text">
+                    <div class="go">GO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="container">
+        <form action="" class="parent">
+            <input type="text" class="search" placeholder="搜索">
+            <button class="btn">搜索</button>
+        </form>
+    </div>
+    <div id="big">
+        <a class="person" href="./businessMes.html?value=${showResult[i].cnumber}" target="you0">
+            <div class="xinxi"></div>
+        </a>
+    </div> -->
+
+    <script src="../js/examineBusiness.js"></script>
+</body>
+
+</html>

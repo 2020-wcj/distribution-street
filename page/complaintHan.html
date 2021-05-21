@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投诉处理</title>
+    <link rel="stylesheet" href="../css/complaintHan.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            <div>
+                <span>投诉单号：</span>
+                <input class="complaNum" type="text" >
+            </div>
+            <!-- <div>
+                <span>商家摊位号：</span>
+                <input class="transactionNum" type="number" >
+            </div> -->
+            <div class="search">
+                <button class="btnSearch">查询</button>
+                <button class="show">显示已处理</button>
+                <button class="hidden">显示未处理</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-nav menu">
+                <div class="order">序号</div>
+                <div class="cnumber">投诉单号</div>
+                <div class="sid">商家摊位号</div>
+                <div class="cid">客户id</div>
+                <div class="dates">日期</div>
+                <div class="state">状态</div>
+            </div>
+            <div class="container-content">
+                <ul class="list">
+                    <!-- <li>
+                        <a href="">
+                            <span class="orderChild">1</span>
+                            <span>198372470</span>
+                            <span class="transactionChi">089238904702</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>1</span>
+                            <span>198372470</span>
+                            <span>089238904702</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="showIndex">
+                    <span>当前页面显示：</span>
+                    <select name="page" id="page">
+                        <!-- <option class="option" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value=3>3</option> -->
+                    </select>
+                    <span>条</span>
+                </div>
+                <div class="selectIndex">
+                    <div class="left">left</div>
+                    <div class="right">right</div>
+                </div>
+                <div class="changeIndex">
+                    <div>跳转到：</div>
+                    <input class="goPage" type="number">
+                    <div class="go">GO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="../js/complaintHan.js"></script>
+</body>
+
+</html>

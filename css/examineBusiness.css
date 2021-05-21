@@ -1,0 +1,269 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #272530;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+input {
+	outline: none;
+	background: none;
+	border: 1px solid #6a6971;
+	border-radius: 3px;
+	color: #fff;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+
+.header {
+	display: flex;
+	/* border: 1px solid black; */
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.header div {
+	margin-top: 100px;
+	/* height: 80px; */
+	/* 设置了这个，会导致输入内容而上移 */
+	/* line-height: 80px; */
+	color: #6a6971;
+}
+
+
+.header div input {
+	display: inline-block;
+	height: 25px;
+	padding-left: 10px;
+}
+/* 没有设置这个的话，长度不固定 */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* margin: 0; */
+}
+
+/* flex, round改变不了margin */
+
+.all .header .search button {
+	width: 80px;
+	height: 29px;
+	background-color: #2a6ab1;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+}
+
+.container {
+	margin: 100px auto;
+	width: 600px;
+	height: 660px;
+	/* border: 1px solid black; */
+	position: relative;
+}
+
+.container-nav {
+	display: flex;
+	height: 40px;
+	width: 100%;
+	background-color: #2a6ab1;
+	line-height: 40px;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+ul.menu {
+	display: flex;
+}
+
+ul.menu li {
+	/* border: 1px solid black; */
+	text-align: center;
+	margin: 0 10px;
+}
+
+
+ ul.menu .sid {
+	width: 80px;
+}
+
+ ul.menu .sname {
+	width: 100px;
+}
+
+ ul.menu .stype {
+	width: 80px;
+}
+
+ ul.menu .sowner {
+	width: 80px;
+}
+ ul.menu .porn {
+	width: 100px;
+}
+
+
+
+
+
+.container-content li span{
+	/* display: inline-block; */
+	color: #b6b5ba;
+	/* width: 120px; */
+}
+
+
+.container-content li a{
+	width: 100%;
+	height: 100%;
+	/* display: block; */
+	display: flex;
+}
+
+
+.list-mes span {
+	/* border: 1px solid black; */
+	text-align: center;
+	margin: 0 10px;
+	display: block;
+}
+
+
+ .list-mes .sid {
+	width: 80px;
+}
+
+ .list-mes .sname {
+	width: 100px;
+}
+
+ .list-mes .stype {
+	width: 80px;
+}
+
+ .list-mes .sowner {
+	width: 80px;
+}
+ .list-mes .porn {
+	width: 100px;
+}
+
+
+
+
+
+.container-content li:nth-child(even) {
+	background: #6a6971;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #b6b5ba;
+}
+
+.container-content li:nth-child(odd) {
+	background: #3d3b46;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #b6b5ba;
+}
+
+.container-content li:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.footer {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+	color: #6a6971;
+}
+
+.footer .showIndex {
+	/* display: flex; */
+	/*  */
+	margin-left: 18px;
+}
+
+.footer .showIndex span {
+	text-align: center;
+}
+
+
+.footer .showIndex select {
+	width: 40px;
+	height: 25px;
+	padding-left: 3px;
+	border-radius: 5px;
+	background: none;
+	color: #6a6971;
+	outline: none;
+
+	/*清除原样式*/
+	/* -webkit-appearance: none; */
+	/* google */
+	/* -moz-appearance: none; */
+	/* firefox */
+	/* appearance: none; */
+	/* IE */
+	/*css添加select背景色的方法*/
+	background-color: #272530;
+}
+
+
+.footer .selectIndex {
+	display: flex;
+	margin-left: 25px;
+}
+
+.footer .selectIndex div {
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #6a6971;
+	margin: 0 5px;
+	padding: 0 6px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.footer .selectIndex div.active {
+	border: none;
+}
+
+.footer .changeIndex {
+	display: flex;
+	margin-left: 30px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.footer .changeIndex input {
+	width: 40px;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+.footer .changeIndex .go {
+	margin-left: 5px;
+	border: 1px solid #6a6971;
+	border-radius: 5px;
+	cursor: pointer;
+}
